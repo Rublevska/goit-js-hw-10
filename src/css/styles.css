@@ -1,0 +1,46 @@
+.hidden {
+  visibility: hidden;
+}
+
+.breed-select {
+  max-width: 300px;
+  font-size: 1.2rem;
+}
+
+.cat-info {
+  display: flex;
+  gap: 30;
+}
+
+.cat-discrybe {
+  max-width: 500px;
+}
+
+/* --base-color: #a1d8f4; use your base color */
+
+.loader {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px 130px;
+  position: relative;
+  color: #a1d8f4;
+  box-sizing: border-box;
+  animation: animloader 1s linear infinite alternate;
+}
+
+@keyframes animloader {
+  0% {
+    box-shadow: -38px -6px, -14px 6px, 14px -6px;
+  }
+  33% {
+    box-shadow: -38px 6px, -14px -6px, 14px 6px;
+  }
+  66% {
+    box-shadow: -38px -6px, -14px 6px, 14px -6px;
+  }
+  100% {
+    box-shadow: -38px 6px, -14px -6px, 14px 6px;
+  }
+}
