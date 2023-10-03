@@ -3,6 +3,7 @@
 }
 
 .breed-select {
+  margin-top: 25px;
   max-width: 300px;
   font-size: 1.2rem;
 }
@@ -12,11 +13,9 @@
   gap: 30;
 }
 
-.cat-discrybe {
+.cat-description {
   max-width: 500px;
 }
-
-/* --base-color: #a1d8f4; use your base color */
 
 .loader {
   width: 12px;

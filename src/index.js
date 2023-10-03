@@ -19,6 +19,7 @@ function onSearch(evt) {
   const selectedBreed = evt.currentTarget.value;
   getImages(selectedBreed);
 }
+вш;
 
 function getBreeds() {
   fetchBreeds()
@@ -65,7 +66,7 @@ function getImages(breed) {
 function createMarcup(dataArr) {
   const { name, description, temperament } = dataArr[0].breeds[0];
   const markup = `<img src=${dataArr[0].url} alt=${name} width="300"/>
-              <div class='cat-discrybe'>
+              <div class='cat-description'>
               <h2>${name}</h2>
               <p>${description}</p>
               <p>
@@ -86,7 +87,7 @@ function showError() {
   Notify.failure(
     'Oops! Something went wrong! Try reloading the page or select another cat breed!',
     {
-      position: 'left-top',
+      position: 'center-top',
       timeout: 5000,
       width: '400px',
       failure: {
